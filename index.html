@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>FARM CAPYZOU</title>
   </head>
@@ -9,26 +10,29 @@
     <header>
       <h1><img src="images/logo.png" alt="FARM CAPYZOU"></h1>
       <nav>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">SHOP</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
       </nav>
     </header>
-     <main>
-       <article>
+    <div>
+    <main>
+      <article>
         <h2>ファームの1日をご紹介します</h2>
-        <time datetime="3021-08-08T12:30">
-         3021年8月8日12時3分
-        </time>
-        <p>
+        <p class="postdate">
+          <time datetime="3021-08-08T12:03">
+            3021年8月8日12時3分
+          </time>
+        </p>
+        <p class="eyecatch">
           <img src="images/eyecatch.png" alt="カピぞうが農園にいる絵">
         </p>
         <section>
-        <h3>6:00～ にんじんの収穫と朝ごはん</h3>
+          <h3>6:00～ にんじんの収穫と朝ごはん</h3>
           <p>朝は6時ごろに起きています。いつまでも布団にくるまっていたいけれど、えいや！と頑張って起きます。<br>外に出て、まずはおひさまに「おはようございます」とご挨拶。</p>
           <p>
             その後、育ったにんじんを収穫します。<br>
@@ -37,7 +41,7 @@
           </p>
           <figure>
             <img src="images/carrots.png" alt="形の悪いにんじんの絵">
-          <figcaption>形が悪くてぼくが食べたにんじんさんたち</figcaption>
+            <figcaption>形が悪くてぼくが食べたにんじんさんたち</figcaption>
           </figure>
         </section>
         <section>
@@ -55,16 +59,16 @@
       </article>
     </main>
     <aside>
-        <nav>
-          <h2>Category</h2>
-          <ul>
-            <li><a href="#">農家の日常(4)</a></li>
-            <li><a href="#">農家のノウハウ(5)</a></li>
-            <li><a href="#">カピぞうレシピ(2)</a></li>
-            <li><a href="#">農家の経営(2)</a></li>
-          </ul>
-        </nav>
-      <nav>
+      <nav class="categoryNav">
+        <h2>Category</h2>
+        <ul>
+          <li><a href="#">農家の日常(4)</a></li>
+          <li><a href="#">農家のノウハウ(5)</a></li>
+          <li><a href="#">カピぞうレシピ(2)</a></li>
+          <li><a href="#">農家の経営(2)</a></li>
+        </ul>
+      </nav>
+      <nav class="recentNav">
         <h2>Recent Articles</h2>
         <ul>
           <li><a href="#">温室栽培での注意トップ10</a></li>
@@ -79,8 +83,9 @@
         <a href="#"><img src="images/side_banner.png" alt="オンラインショップバナー"></a>
       </p>
     </aside>
+    </div>
     <footer>
-     <p><small>© 3021 FARM CAPYZOU</small></p>
+      <p><small>© 3021 FARM CAPYZOU</small></p>
     </footer>
   </body>
 </html>
